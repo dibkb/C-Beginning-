@@ -3,11 +3,9 @@ int main(){
   int age;
   std::cout<<"Enter your age !";
   std::cin>> age;
-  if (age>=18){
-    std::cout<<"Welcome to Sin City !";
-  }
-  else {
-    std::cout<< "You are not elligible";
-  }
+  // ternary operator
+  std::string passMessage = "Welcome to Sin City";
+  std::string failMessage = "You are not elligible for Sin City";
+  age >=18 ? std::cout<<passMessage : std::cout<<failMessage;
   return 0;
 }
